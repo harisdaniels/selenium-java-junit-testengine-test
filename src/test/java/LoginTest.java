@@ -1,3 +1,4 @@
+import hooks.SetUp;
 import org.pages.LoginPage;
 import org.junit.jupiter.api.*;
 

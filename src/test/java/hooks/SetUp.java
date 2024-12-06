@@ -1,3 +1,5 @@
+package hooks;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
@@ -12,7 +14,7 @@ import java.util.Properties;
 
 public class SetUp {
 
-    WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeAll
     @DisplayName("Initialize and Setup")
