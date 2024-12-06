@@ -12,8 +12,10 @@ public class LoginTest extends SetUp {
     public void loginTest() {
         try {
             LoginPage login = new LoginPage(driver);
-            login.fillUsername("Admin");
-            login.fillPassword("admin123");
+            Thread.sleep(2000);
+            login.fillUsername(login.getUsernameCredentials());
+            Thread.sleep(2000);
+            login.fillPassword(login.getPasswordCredentials());
             login.clickLoginButton();
 
             assertEquals("OrangeHRM", driver.getTitle());
